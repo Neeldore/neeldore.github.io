@@ -4,7 +4,12 @@
 
 .profile-page .circle {
     position: relative;
-    margin-bottom: 7%;
+}
+
+@media screen and (max-width: 500px){
+    .profile-page .circle {
+        position: relative;
+    }
 }
 
 .profile-page img {
