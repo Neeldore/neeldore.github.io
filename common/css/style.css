@@ -1,16 +1,15 @@
 .profile-page {
     text-align: center;
-    margin-bottom: -66px;
 }
 
 .profile-page .circle {
     position: relative;
-    margin-right: -20%;
+    margin-bottom: 7%;
 }
 
 .profile-page img {
-    -webkit-clip-path: circle(36% at 43% 42%);
-    clip-path: circle(36% at 43% 42%);
     width: 280px;
-    margin-right: 20px;
+}
+.enter-profile {
+    text-align: center;
 }
