@@ -53,4 +53,7 @@ $(document).on('click', 'a[href^="#"]', function (e) {
 $(document).ready(function () {
     $("#project-2").hide();
 });
+var goToMyBlog = function () {
+    location.href = "https://techvoker.wordpress.com";
+}
 executeMe();
