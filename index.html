@@ -9,12 +9,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <title>Welcome to the world's most Okayest site</title>
+  <script src="./app.js"> </script>
+  <title>Techvoker</title>
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light" id="navigation-bar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -22,27 +23,27 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item active" id="home-button">
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#project" id="project-button">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Work Exprience</a>
+          <a class="nav-link" href="#experience">Work Exprience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Academics</a>
+          <a class="nav-link" href="#academics">Academics</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="#blog">Blog</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <div class="container">
-    <div class="row">
+    <div class="row" id="home">
       <div class="col col-md-2"></div>
       <div class="col col-md-8 ">
         <div class="my-4">
@@ -54,15 +55,43 @@
           <div class="enter-profile">
             <h1 class="mt-4">Neelkant K Jain</h1>
             <h3 class="text-secondary mt-4">Software developer</h4>
-            <h5 class="text-secondary mt-3">
-              Hey There and thanks for visiting my page! i'm a software developer from Bangalore.
-              I'm skilled in Frontend technologies like React.js, Dojo and Vue.js and have a
-              good fundemental knowledge of Node.js/Express.js.
-            </h5>
+              <h5 class="text-secondary mt-3">
+                Hey There and thanks for visiting my page! i'm a software developer from Bangalore.
+                I'm skilled in Frontend technologies like React.js, Dojo and Vue.js and have a
+                good fundemental knowledge of Node.js/Express.js.
+              </h5>
           </div>
         </div>
       </div>
       <div class="col col-md-2"></div>
+    </div>
+    <div class="row" id="project">
+      <div class="col col-md-12">
+        <div class="projects-css">
+          <h1>Coming soon!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="experience">
+      <div class="col col-md-12">
+        <div class="projects-css">
+          <h1>Coming soon!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="academics">
+      <div class="col col-md-12">
+        <div class="projects-css">
+          <h1>Coming soon!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="blog">
+      <div class="col col-md-12">
+        <div class="projects-css">
+          <h1>Visit my blog at <span class="btn-link"> techvoker.wordpress.com</span></h1>
+        </div>
+      </div>
     </div>
   </div>
 </body>

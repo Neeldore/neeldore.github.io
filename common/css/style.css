@@ -6,7 +6,7 @@
     position: relative;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .profile-page .circle {
         position: relative;
     }
@@ -15,6 +15,26 @@
 .profile-page img {
     width: 280px;
 }
+
 .enter-profile {
     text-align: center;
+}
+
+#navigation-bar {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.projects {
+    height: 100vh;
+}
+
+.projects-css {
+    min-height: 90vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
