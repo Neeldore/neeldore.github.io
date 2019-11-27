@@ -34,6 +34,8 @@ var executeMe = function () {
 $(document).on('click', 'a[href^="#"]', function (e) {
     // target element id
     var id = $(this).attr('href');
+    if (id === "#carouselExampleIndicators")
+        return;
     var hightOfNav = $("#navigation-bar").height();
     // target element
     var $id = $(id);
@@ -45,7 +47,7 @@ $(document).on('click', 'a[href^="#"]', function (e) {
     e.preventDefault();
 
     // top position relative to the document
-    var pos = $id.offset().top - hightOfNav;
+    var pos = $id.offset().top - hightOfNav - 20;
 
     // animated top scrolling
     $('body, html').animate({ scrollTop: pos });
